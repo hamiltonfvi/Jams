@@ -1,0 +1,24 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Jams</string>
+
+    <string name="intro">Jams</string>
+
+    <!-- Category name for Latino Music [CHAR LIMIT=20] -->
+    <string name="latino">Latino</string>
+
+    <!-- Category name for Video-Game Music[CHAR LIMIT=20] -->
+    <string name="video_games">Video-Games</string>
+
+    <!-- Category name for Anime Music[CHAR LIMIT=20] -->
+    <string name="anime">Anime</string>
+
+    <!-- Category name for Dance Music [CHAR LIMIT=20] -->
+    <string name="dance">Dance</string>
+
+    <!-- Category name for Old School Music [CHAR LIMIT=20] -->
+    <string name="old_school">Old School</string>
+
+    <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
+    <string name="films">Tv Shows and Films</string>
+</resources>

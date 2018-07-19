@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/intro"
+            style="@style/Intro"
+            android:text="@string/intro"
+            tools:fontFamily="@font/cherry_cream_soda"/>
+
+        <TextView
+            android:id="@+id/anime"
+            style="@style/CategoryStyle"
+            android:background="@color/category_anime"
+            android:text="@string/anime" />
+
+        <TextView
+            android:id="@+id/classics"
+            style="@style/CategoryStyle"
+            android:background="@color/category_old_school"
+            android:text="@string/old_school" />
+
+        <TextView
+            android:id="@+id/video_games"
+            style="@style/CategoryStyle"
+            android:background="@color/category_video_games"
+            android:text="@string/video_games" />
+
+        <TextView
+            android:id="@+id/latino"
+            style="@style/CategoryStyle"
+            android:background="@color/category_latino"
+            android:text="@string/latino" />
+
+        <TextView
+            android:id="@+id/films"
+            style="@style/CategoryStyle"
+            android:background="@color/category_films"
+            android:text="@string/films" />
+
+        <TextView
+            android:id="@+id/dance"
+            style="@style/CategoryStyle"
+            android:background="@color/category_dance"
+            android:text="@string/dance" />
+
+    </LinearLayout>
+
+</ScrollView>
