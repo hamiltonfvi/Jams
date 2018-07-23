@@ -16,9 +16,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".LatinoActivity"
+            android:label="@string/latino" />
+        <activity
+            android:name=".VideoGamesActivity"
+            android:label="@string/video_games" />
+        <activity
+            android:name=".AnimeActivity"
+            android:label="@string/anime" />
+        <activity
+            android:name=".DanceActivity"
+            android:label="@string/dance" />
+        <activity
+            android:name=".OldSchoolActivity"
+            android:label="@string/old_school" />
+        <activity
+            android:name=".FilmsActivity"
+            android:label="@string/films" />
     </application>
 
 </manifest>

@@ -2,8 +2,6 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Jams</string>
 
-    <string name="intro">Jams</string>
-
     <!-- Category name for Latino Music [CHAR LIMIT=20] -->
     <string name="latino">Latino</string>
 
@@ -20,5 +18,5 @@
     <string name="old_school">Old School</string>
 
     <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
-    <string name="films">Tv Shows and Films</string>
+    <string name="films">TV and Films</string>
 </resources>

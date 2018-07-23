@@ -14,19 +14,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/intro"
-            style="@style/Intro"
-            android:text="@string/intro"
-            tools:fontFamily="@font/cherry_cream_soda"/>
-
-        <TextView
             android:id="@+id/anime"
             style="@style/CategoryStyle"
             android:background="@color/category_anime"
             android:text="@string/anime" />
 
         <TextView
-            android:id="@+id/classics"
+            android:id="@+id/old_school"
             style="@style/CategoryStyle"
             android:background="@color/category_old_school"
             android:text="@string/old_school" />
