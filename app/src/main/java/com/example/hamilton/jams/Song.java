@@ -1,5 +1,7 @@
 package com.example.hamilton.jams;
 
+import android.media.Image;
+
 public class Song {
     /**
      * Song Name
@@ -12,25 +14,38 @@ public class Song {
     private String mArtistName;
 
     /**
+     * Image Resource id for the Album Cover
+     */
+    private int mAlbumCover;
+
+    /**
      * Create a new Song object.
      *
      * @param songName   is the song title
      * @param artistName is the name of the Artist
+     * @param albumCover is the resource id of the album's image
      */
-    public Song(String songName, String artistName) {
+
+    public Song(String songName, String artistName, int albumCover) {
         mSongName = songName;
         mArtistName = artistName;
+        mAlbumCover = albumCover;
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the resource id of the album's image.
+     */
+    public int getAlbumCover() { return mAlbumCover; }
+
+    /**
+     * Get the Song name.
      */
     public String getSongName() {
         return mSongName;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the Artist Name.
      */
     public String getArtistName() {
         return mArtistName;

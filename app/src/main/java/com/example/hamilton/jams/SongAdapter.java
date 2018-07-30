@@ -4,11 +4,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.view.LayoutInflater;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.Activity;
+
 import java.util.ArrayList;
 
-public class SongAdapter extends ArrayAdapter<Song>{
+public class SongAdapter extends ArrayAdapter<Song> {
 
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -31,16 +33,22 @@ public class SongAdapter extends ArrayAdapter<Song>{
         Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView miwokTextView = listItemView.findViewById(R.id.miwok_text_view);
+        TextView songName = listItemView.findViewById(R.id.song_name_text_view);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        miwokTextView.setText(currentSong.getSongName());
+        songName.setText(currentSong.getSongName());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView defaultTextView = listItemView.findViewById(R.id.default_text_view);
+        TextView artistName = listItemView.findViewById(R.id.artist_name_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
-        defaultTextView.setText(currentSong.getArtistName());
+        artistName.setText(currentSong.getArtistName());
+
+        // Find the TextView in the list_item.xml layout with the ID version_name
+        ImageView albumImage = listItemView.findViewById(R.id.album_image_view);
+        // Get the version name from the current AndroidFlavor object and
+        // set this text on the name TextView
+        albumImage.setImageResource(currentSong.getAlbumCover());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

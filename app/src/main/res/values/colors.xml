@@ -27,7 +27,4 @@
     <!-- Background color for dance music category -->
     <color name="category_dance">#455a64</color>
 
-    <!-- Text color for the Intro's Text -->
-    <color name="text_color_intro">#1a237e</color>
-
 </resources>

@@ -17,14 +17,26 @@ public class DanceActivity extends AppCompatActivity {
         ArrayList<Song> songs = new ArrayList<>();
 
         // Create a list of songs
-        songs.add(new Song("red", "weṭeṭṭi"));
-        songs.add(new Song("mustard yellow", "chiwiiṭә"));
-        songs.add(new Song("dusty yellow", "ṭopiisә"));
-        songs.add(new Song("green", "chokokki"));
-        songs.add(new Song("brown", "ṭakaakki"));
-        songs.add(new Song("gray", "ṭopoppi"));
-        songs.add(new Song("black", "kululli"));
-        songs.add(new Song("white", "kelelli"));
+        songs.add(new Song("Can't Stop Me", "Afrojack & Shermanology", R.drawable.dance00));
+        songs.add(new Song("Mr. Saxo Beat", "Alexandra Stan", R.drawable.dance01));
+        songs.add(new Song("Addicted To You", "Avicii", R.drawable.dance02));
+        songs.add(new Song("Wake Me Up", "Avicii", R.drawable.dance03));
+        songs.add(new Song("Cinema", "Benny Benassi & Gary Go", R.drawable.dance04));
+        songs.add(new Song("World, Hold On", "Bob Sinclar", R.drawable.dance05));
+        songs.add(new Song("Summer", "Calvin Harris", R.drawable.dance06));
+        songs.add(new Song("How Deep Is Your Love", "Calvin Harris & Disciples", R.drawable.dance07));
+        songs.add(new Song("Blame", "Calvin Harris & John Newman", R.drawable.dance08));
+        songs.add(new Song("One Love", "David Guetta & Estelle", R.drawable.dance09));
+        songs.add(new Song("Hey Mama", "David Guetta & Nicki Minaj & Afrojack", R.drawable.dance10));
+        songs.add(new Song("Flames", "David Guetta & Sia", R.drawable.dance11));
+        songs.add(new Song("Titanium", "David Guetta & Sia", R.drawable.dance12));
+        songs.add(new Song("It's My Life", "Dr. Alban", R.drawable.dance13));
+        songs.add(new Song("Barbra Streisand", "Duck Sauce", R.drawable.dance14));
+        songs.add(new Song("Tonight (I'm Lovin' You)", "Enrique Iglesias & Ludacris", R.drawable.dance15));
+        songs.add(new Song("You Spin Me Round", "Gigi D'Agostino", R.drawable.dance16));
+        songs.add(new Song("What is Love", "Haddaway", R.drawable.dance17));
+        songs.add(new Song("Just Be", "Tiesto", R.drawable.dance18));
+        songs.add(new Song("The Fox (What Does The Fox Say)", "Ylvis", R.drawable.dance19));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
