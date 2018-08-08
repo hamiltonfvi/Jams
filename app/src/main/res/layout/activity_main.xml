@@ -22,7 +22,8 @@
                 android:id="@+id/anime"
                 style="@style/CategoryStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
                 android:background="@color/category_anime"
                 android:text="@string/anime" />
 
@@ -43,14 +44,6 @@
                 android:text="@string/dance" />
 
         </LinearLayout>
-
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="16dp"
-            android:background="@android:color/darker_gray">
-
-        </View>
 
         <LinearLayout
             android:layout_width="0dp"
