@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/category_films"
+        android:background="@color/color_item"
         android:paddingLeft="16dp">
 
         <TextView

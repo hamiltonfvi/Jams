@@ -6,25 +6,13 @@
     <!-- Primary dark color of the app (shown in the status bar) -->
     <color name="primary_dark_color">#2F1D1A</color>
 
-    <!-- Background color for app -->
-    <color name="tan_background">#FFF7DA</color>
+    <!-- Background color for the main screen -->
+    <color name="semi_tan_background">#fff3e0</color>
 
-    <!-- Background color for latino music category -->
-    <color name="category_latino">#FD8E09</color>
+    <!-- Background color for list item -->
+    <color name="color_item">#f48fb1</color>
 
-    <!-- Background color for video-games music category -->
-    <color name="category_video_games">#379237</color>
-
-    <!-- Background color for anime music category -->
-    <color name="category_anime">#8800A0</color>
-
-    <!-- Background color for old school music category -->
-    <color name="category_old_school">#16AFCA</color>
-
-    <!-- Background color for tv shows & films music category -->
-    <color name="category_films">#f48fb1</color>
-
-    <!-- Background color for dance music category -->
-    <color name="category_dance">#455a64</color>
+    <!-- Text color for Title -->
+    <color name="dark_text_color">#000105</color>
 
 </resources>
