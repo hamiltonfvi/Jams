@@ -21,7 +21,12 @@
     <string name="films">TV and Films</string>
 
     <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
+    <string name="welcome">Welcome to Jams</string>
+
+    <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
     <string name="select_categories">Please Select a Category</string>
+
+    <string name="play">Play</string>
 
 
 </resources>

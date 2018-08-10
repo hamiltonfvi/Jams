@@ -4,6 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.view.LayoutInflater;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.Activity;
@@ -29,26 +30,32 @@ public class SongAdapter extends ArrayAdapter<Song> {
                     R.layout.list_item, parent, false);
         }
 
-        // Get the {@link AndroidFlavor} object located at this position in the list
+        // Get the object located at this position in the list
         Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView songName = listItemView.findViewById(R.id.song_name_text_view);
-        // Get the version name from the current AndroidFlavor object and
+        // Get the version name from the current object and
         // set this text on the name TextView
         songName.setText(currentSong.getSongName());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView artistName = listItemView.findViewById(R.id.artist_name_text_view);
-        // Get the version number from the current AndroidFlavor object and
+        // Get the version number from the current object and
         // set this text on the number TextView
         artistName.setText(currentSong.getArtistName());
 
-        // Find the TextView in the list_item.xml layout with the ID version_name
+        // Find the ImageView in the list_item.xml layout with the ID version_name
         ImageView albumImage = listItemView.findViewById(R.id.album_image_view);
-        // Get the version name from the current AndroidFlavor object and
-        // set this text on the name TextView
+        // Get the version name from the current object and
+        // set this text on the name ImageView
         albumImage.setImageResource(currentSong.getAlbumCover());
+
+        // Find the Button in the list_item.xml layout with the ID version_name
+        Button tuneSong = listItemView.findViewById(R.id.tune_play);
+        // Get the version name from the current object and
+        // set this text on the name ButtonView
+        tuneSong.(currentSong.getSongTune());
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView

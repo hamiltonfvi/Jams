@@ -14,11 +14,16 @@
         android:orientation="vertical">
 
         <TextView
+            style="@style/TitleStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/select_categories"
-            style="@style/TitleStyle"/>
+            android:text="@string/welcome" />
 
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_categories" />
 
         <LinearLayout
             android:id="@+id/linearLayout01"
@@ -89,9 +94,9 @@
                     android:text="@string/films" />
 
             </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
-
 
 </ScrollView>

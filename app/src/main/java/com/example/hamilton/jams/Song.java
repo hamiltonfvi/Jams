@@ -19,6 +19,11 @@ public class Song {
     private int mAlbumCover;
 
     /**
+     * Tune for selected song
+     */
+    private int mSongTune;
+
+    /**
      * Create a new Song object.
      *
      * @param songName   is the song title
@@ -26,10 +31,11 @@ public class Song {
      * @param albumCover is the resource id of the album's image
      */
 
-    public Song(String songName, String artistName, int albumCover) {
+    public Song(String songName, String artistName, int albumCover, int songTune) {
         mSongName = songName;
         mArtistName = artistName;
         mAlbumCover = albumCover;
+        mSongTune = songTune;
     }
 
     /**
@@ -49,5 +55,12 @@ public class Song {
      */
     public String getArtistName() {
         return mArtistName;
+    }
+
+    /**
+     * Get the Song's Tune.
+     */
+    public int getSongTune() {
+        return mSongTune;
     }
 }
