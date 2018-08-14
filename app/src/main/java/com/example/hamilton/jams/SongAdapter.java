@@ -8,10 +8,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.Activity;
+import android.media.MediaPlayer;
 
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
+
+    private boolean flag = true;
+    private MediaPlayer mediaPlayer;
 
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -31,7 +35,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         }
 
         // Get the object located at this position in the list
-        Song currentSong = getItem(position);
+        final Song currentSong = getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView songName = listItemView.findViewById(R.id.song_name_text_view);
@@ -54,12 +58,17 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // Find the Button in the list_item.xml layout with the ID version_name
         Button tuneSong = listItemView.findViewById(R.id.tune_play);
         // Get the version name from the current object and
-        // set this text on the name ButtonView
-        tuneSong.(currentSong.getSongTune());
+        // set this tune on the name ButtonView
+        tuneSong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final MediaPlayer ring = MediaPlayer.create(getContext(), currentSong.getSongTune());
+                ring.start();
+            }
+        });
 
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
         return listItemView;
     }
 }
-
