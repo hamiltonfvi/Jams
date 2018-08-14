@@ -35,4 +35,34 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="AnimeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#42d1f4</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <style name="OldSchoolTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#e50606</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <style name="DanceTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#dd26f2</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <style name="VideoGamesTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#17d627</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <style name="LatinoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#b7b710</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <style name="FilmsTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#342f7a</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
 </resources>

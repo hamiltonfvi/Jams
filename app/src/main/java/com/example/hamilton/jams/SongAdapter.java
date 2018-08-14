@@ -5,6 +5,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.view.LayoutInflater;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.app.Activity;
@@ -56,7 +57,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         albumImage.setImageResource(currentSong.getAlbumCover());
 
         // Find the Button in the list_item.xml layout with the ID version_name
-        Button tuneSong = listItemView.findViewById(R.id.tune_play);
+        ImageButton tuneSong = listItemView.findViewById(R.id.tune_play);
         // Get the version name from the current object and
         // set this tune on the name ButtonView
         tuneSong.setOnClickListener(new View.OnClickListener() {

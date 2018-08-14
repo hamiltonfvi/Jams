@@ -26,7 +26,7 @@
     <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
     <string name="select_categories">Please Select a Category</string>
 
-    <string name="play">Play</string>
+    <string name="play_button">Play Button</string>
 
     <string name="album_image">Album Image</string>
 

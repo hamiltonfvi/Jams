@@ -27,7 +27,7 @@ public class DanceActivity extends AppCompatActivity {
         songs.add(new Song("How Deep Is Your Love", "Calvin Harris & Disciples", R.drawable.dance07, R.raw.dance07));
         songs.add(new Song("Blame", "Calvin Harris & John Newman", R.drawable.dance08, R.raw.dance08));
         songs.add(new Song("One Love", "David Guetta & Estelle", R.drawable.dance09, R.raw.dance09));
-        songs.add(new Song("Hey Mama", "David Guetta & Nicki Minaj & Afrojack", R.drawable.dance10, R.raw.dance10));
+        songs.add(new Song("Hey Mama", "David Guetta, Nicki M & Afrojack", R.drawable.dance10, R.raw.dance10));
         songs.add(new Song("Flames", "David Guetta & Sia", R.drawable.dance11, R.raw.dance11));
         songs.add(new Song("Titanium", "David Guetta & Sia", R.drawable.dance12, R.raw.dance12));
         songs.add(new Song("It's My Life", "Dr. Alban", R.drawable.dance13, R.raw.dance13));

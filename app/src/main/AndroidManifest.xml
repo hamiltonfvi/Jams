@@ -19,22 +19,28 @@
 
         <activity
             android:name=".LatinoActivity"
-            android:label="@string/latino" />
+            android:label="@string/latino"
+            android:theme="@style/LatinoTheme"/>
         <activity
             android:name=".VideoGamesActivity"
-            android:label="@string/video_games" />
+            android:label="@string/video_games"
+            android:theme="@style/VideoGamesTheme"/>
         <activity
             android:name=".AnimeActivity"
-            android:label="@string/anime" />
+            android:label="@string/anime"
+            android:theme="@style/AnimeTheme"/>
         <activity
             android:name=".DanceActivity"
-            android:label="@string/dance" />
+            android:label="@string/dance"
+            android:theme="@style/DanceTheme"/>
         <activity
             android:name=".OldSchoolActivity"
-            android:label="@string/old_school" />
+            android:label="@string/old_school"
+            android:theme="@style/OldSchoolTheme"/>
         <activity
             android:name=".FilmsActivity"
-            android:label="@string/films" />
+            android:label="@string/films"
+            android:theme="@style/FilmsTheme"/>
     </application>
 
 </manifest>

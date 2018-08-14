@@ -23,12 +23,11 @@
             android:layout_height="0dp"
             android:layout_marginEnd="@dimen/dimen_12dp"
             android:layout_marginLeft="@dimen/dimen_12dp"
-            android:layout_marginRight="@dimen/dimen_12dp"
             android:layout_marginStart="@dimen/dimen_12dp"
             android:layout_weight="1"
             android:gravity="bottom"
             android:textColor="@android:color/black"
-            android:textSize="@dimen/dimen_20sp"
+            android:textSize="@dimen/dimen_16sp"
             tools:text="lutti" />
 
         <TextView
@@ -37,7 +36,6 @@
             android:layout_height="0dp"
             android:layout_marginEnd="@dimen/dimen_12dp"
             android:layout_marginLeft="@dimen/dimen_12dp"
-            android:layout_marginRight="@dimen/dimen_12dp"
             android:layout_marginStart="@dimen/dimen_12dp"
             android:layout_weight="1"
             android:gravity="top"
@@ -46,12 +44,11 @@
 
     </LinearLayout>
 
-    <Button
+    <ImageButton
+        android:contentDescription="@string/play_button"
         android:id="@+id/tune_play"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:text="@string/play"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:background="@drawable/buttonplay"/>
 
 </LinearLayout>
