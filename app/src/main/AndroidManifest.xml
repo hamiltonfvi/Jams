@@ -39,7 +39,7 @@
             android:theme="@style/OldSchoolTheme"/>
         <activity
             android:name=".FilmsActivity"
-            android:label="@string/films"
+            android:label="@string/soundtracks"
             android:theme="@style/FilmsTheme"/>
     </application>
 

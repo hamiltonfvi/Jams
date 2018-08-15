@@ -6,7 +6,7 @@
     <string name="latino">Latino</string>
 
     <!-- Category name for Video-Game Music[CHAR LIMIT=20] -->
-    <string name="video_games">Video Games</string>
+    <string name="video_games">VideoGames</string>
 
     <!-- Category name for Anime Music[CHAR LIMIT=20] -->
     <string name="anime">Anime</string>
@@ -18,7 +18,7 @@
     <string name="old_school">Old School</string>
 
     <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
-    <string name="films">TV and Films</string>
+    <string name="soundtracks">Soundtracks</string>
 
     <!-- Category name for TV Shows & Films Music [CHAR LIMIT=20] -->
     <string name="welcome">Welcome to Jams</string>

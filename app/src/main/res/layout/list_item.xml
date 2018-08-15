@@ -49,6 +49,8 @@
         android:id="@+id/tune_play"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:background="@drawable/buttonplay"/>
+        android:background="@drawable/buttonplay"
+        android:paddingRight="12dp"
+        android:layout_marginRight="12dp"/>
 
 </LinearLayout>
