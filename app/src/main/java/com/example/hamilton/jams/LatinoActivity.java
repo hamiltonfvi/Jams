@@ -19,7 +19,7 @@ public class LatinoActivity extends AppCompatActivity {
         // Create a list of songs
         songs.add(new Song("Obsesion", "Aventura", R.drawable.latino00, R.raw.latino00));
         songs.add(new Song("Mayores", "Becky G & Bad Bunny", R.drawable.latino01, R.raw.latino01));
-        songs.add(new Song("Bailando", "Enrique Iglesias & Gente de Zona", R.drawable.latino02, R.raw.latino02));
+        songs.add(new Song("Bailando", "Enrique I & Gente de Zona", R.drawable.latino02, R.raw.latino02));
         songs.add(new Song("Mi Gente", "J Balvin & Willy William", R.drawable.latino03, R.raw.latino03));
         songs.add(new Song("Bonito", "Jarabe de Palo", R.drawable.latino04, R.raw.latino04));
         songs.add(new Song("Ojala Que Llueva Cafe", "Juan Luis Guerra", R.drawable.latino05, R.raw.latino05));
@@ -38,17 +38,17 @@ public class LatinoActivity extends AppCompatActivity {
         songs.add(new Song("Loca", "Shakira & El Cata", R.drawable.latino18, R.raw.latino18));
         songs.add(new Song("Micalea", "Sonora Carruseles", R.drawable.latino19, R.raw.latino19));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter = new SongAdapter(this, songs);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file
+        // song_list.xml layout file
         ListView listView = findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
     }
 }
