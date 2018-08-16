@@ -7,10 +7,10 @@
     android:padding="16dp">
 
     <ImageView
-        android:contentDescription="@string/album_image"
         android:id="@+id/album_image_view"
         android:layout_width="@dimen/list_item_height"
-        android:layout_height="@dimen/list_item_height" />
+        android:layout_height="@dimen/list_item_height"
+        android:contentDescription="@string/album_image" />
 
     <LinearLayout
         android:layout_width="220dp"
@@ -45,20 +45,19 @@
     </LinearLayout>
 
     <ImageButton
-        android:contentDescription="@string/play_button"
         android:id="@+id/tune_play"
         android:layout_width="@dimen/button_size"
         android:layout_height="@dimen/button_size"
-        android:padding="@dimen/dimen_16dp"
         android:background="@drawable/buttonplay"
- />
+        android:contentDescription="@string/play_button"
+        android:padding="@dimen/dimen_16dp" />
 
     <ImageButton
-        android:contentDescription="@string/stop_button"
         android:id="@+id/tune_stop"
         android:layout_width="@dimen/button_size"
         android:layout_height="@dimen/button_size"
-        android:padding="@dimen/dimen_16dp"
-        android:background="@drawable/buttonstop" />
+        android:background="@drawable/buttonstop"
+        android:contentDescription="@string/stop_button"
+        android:padding="@dimen/dimen_16dp" />
 
 </LinearLayout>
