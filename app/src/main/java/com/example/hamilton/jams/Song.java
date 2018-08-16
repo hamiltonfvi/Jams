@@ -1,7 +1,5 @@
 package com.example.hamilton.jams;
 
-import android.media.Image;
-
 public class Song {
     /**
      * Song Name
@@ -29,6 +27,7 @@ public class Song {
      * @param songName   is the song title
      * @param artistName is the name of the Artist
      * @param albumCover is the resource id of the album's image
+     * @param songTune is the resource id of the audio file
      */
 
     public Song(String songName, String artistName, int albumCover, int songTune) {
