@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView films = findViewById(R.id.films);
         final TextView videogames = findViewById(R.id.video_games);
 
-        // Setup event handler latino category
+        // Setup event handler Latino category
         latino.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when latino category is clicked on.
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        // Setup event handler anime category
+        // Setup event handler Anime category
         anime.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when anime category is clicked on.
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Setup event handler dance category
+        // Setup event handler Dance category
         dance.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when dance category is clicked on.
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Setup event handler TV & Films category
+        // Setup event handler Soundtrack category
         films.setOnClickListener(new View.OnClickListener() {
 
             // The code in this method will be executed when TV & Films category is clicked on.
