@@ -4,7 +4,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.view.LayoutInflater;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 public class SongAdapter extends ArrayAdapter<Song> {
 
     private boolean flag = true;
-    private MediaPlayer mediaPlayer;
+    private MediaPlayer ring;
 
     public SongAdapter(Activity context, ArrayList<Song> songs) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
@@ -47,7 +46,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // Find the TextView in the list_item.xml layout with the ID version_number
         TextView artistName = listItemView.findViewById(R.id.artist_name_text_view);
         // Get the version number from the current object and
-        // set this text on the number TextView
+        // set this text on the name TextView
         artistName.setText(currentSong.getArtistName());
 
         // Find the ImageView in the list_item.xml layout with the ID version_name
@@ -56,15 +55,34 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // set this text on the name ImageView
         albumImage.setImageResource(currentSong.getAlbumCover());
 
-        // Find the Button in the list_item.xml layout with the ID version_name
-        ImageButton tuneSong = listItemView.findViewById(R.id.tune_play);
+        // Find the ImageButton in the list_item.xml layout with the ID version_name
+        final ImageButton tuneSong = listItemView.findViewById(R.id.tune_play);
         // Get the version name from the current object and
-        // set this tune on the name ButtonView
+        // set this resource on the name ImageButton
+
+        // Find the ImageButton in the list_item.xml layout with the ID version_name
+        final ImageButton tuneStop = listItemView.findViewById(R.id.tune_stop);
+        // Get the version name from the current object and
+        // set this resource on the name ImageButton
+
         tuneSong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final MediaPlayer ring = MediaPlayer.create(getContext(), currentSong.getSongTune());
+                if (flag) {
+                    ring = MediaPlayer.create(getContext(), currentSong.getSongTune());
+                    flag = false;
+                }
                 ring.start();
+            }
+        });
+        tuneStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (!flag) {
+                    ring.stop();
+                    ring.release();
+                    flag = true;
+                }
             }
         });
 
