@@ -19,7 +19,7 @@ public class AnimeActivity extends AppCompatActivity {
 
         // Create a list of songs
         songs.add(new Song("History Maker", "Yuri on Ice", R.drawable.anime00, R.raw.anime00));
-        songs.add(new Song("Teenage Mutant Ninja Turtles", "Teenage Mutant Ninja Turtles", R.drawable.anime01, R.raw.anime01));
+        songs.add(new Song("TMNT", "Teenage Mutant Ninja Turtles", R.drawable.anime01, R.raw.anime01));
         songs.add(new Song("Cha-La Head-Cha-La", "Dragon Ball Z", R.drawable.anime02, R.raw.anime02));
         songs.add(new Song("DuckTales", "DuckTales", R.drawable.anime03, R.raw.anime03));
         songs.add(new Song("Believe", "One Piece", R.drawable.anime04, R.raw.anime04));
@@ -35,21 +35,21 @@ public class AnimeActivity extends AppCompatActivity {
         songs.add(new Song("That's All Folks", "Porky Pig", R.drawable.anime14, R.raw.anime14));
         songs.add(new Song("Powerpuff Girls", "Powerpuff Girls", R.drawable.anime15, R.raw.anime15));
         songs.add(new Song("Guren no Yumi", "Attack of Titans", R.drawable.anime16, R.raw.anime16));
-        songs.add(new Song("The Pink Panther Theme", "The Pink Panther", R.drawable.anime17, R.raw.anime17));
+        songs.add(new Song("The Pink Panther", "The Pink Panther", R.drawable.anime17, R.raw.anime17));
         songs.add(new Song("Heart of Sword", "Samurai X", R.drawable.anime18, R.raw.anime18));
         songs.add(new Song("Lupin The Third Theme", "Lupin The Third", R.drawable.anime19, R.raw.anime19));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter = new SongAdapter(this, songs);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
-        // word_list.xml layout file
+        // song_list.xml layout file
         ListView listView = findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Song} in the list.
         listView.setAdapter(adapter);
     }
 }
